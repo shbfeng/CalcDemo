@@ -4,6 +4,7 @@ using System.Windows.Forms;
 
 namespace CalcDemo
 {
+  
     public partial class Calc : Form
     {
         private readonly HiddenForm _settingsForm = new HiddenForm();

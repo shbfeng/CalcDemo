@@ -9,3 +9,14 @@ C:\Users\Fengshb\source\repos\CalcDemo\CalcDemo\obj\Debug\CalcDemo.csproj.CoreCo
 C:\Users\Fengshb\source\repos\CalcDemo\CalcDemo\obj\Debug\CalcDemo.exe
 C:\Users\Fengshb\source\repos\CalcDemo\CalcDemo\obj\Debug\CalcDemo.pdb
 C:\Users\Fengshb\source\repos\CalcDemo\CalcDemo\obj\Debug\CalcDemo.HiddenForm.resources
+D:\Code\CalcDemo\CalcDemo\obj\Debug\CalcDemo.Calc.resources
+D:\Code\CalcDemo\CalcDemo\obj\Debug\CalcDemo.HiddenForm.resources
+D:\Code\CalcDemo\CalcDemo\obj\Debug\CalcDemo.Properties.Resources.resources
+D:\Code\CalcDemo\CalcDemo\obj\Debug\CalcDemo.csproj.GenerateResource.cache
+D:\Code\CalcDemo\CalcDemo\obj\Debug\CalcDemo.csproj.CoreCompileInputs.cache
+D:\Code\CalcDemo\CalcDemo\bin\Debug\CalcDemo.exe.config
+D:\Code\CalcDemo\CalcDemo\bin\Debug\CalcDemo.exe
+D:\Code\CalcDemo\CalcDemo\bin\Debug\CalcDemo.pdb
+D:\Code\CalcDemo\CalcDemo\obj\Debug\CalcDemo.exe
+D:\Code\CalcDemo\CalcDemo\obj\Debug\CalcDemo.pdb
+D:\Code\CalcDemo\CalcDemo\obj\Debug\CalcDemo.csprojAssemblyReference.cache

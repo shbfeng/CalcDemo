@@ -2,12 +2,12 @@
 {
     public partial class Dog
     {
-        public int dog_legs;
-        public int dog_eyes;
+        public int DogLegs;
+        public int DogEyes;
 
-        public int total_eyes(int input_a, int input_b)
+        public int total_eyes(int inputA, int inputB)
         {
-            return (input_a + input_b);
+            return (inputA + inputB);
         }
     }
 }
