@@ -75,6 +75,8 @@ namespace CalcDemo
             else 
                 _settingsForm.Show();
             
+
+
         }
 
 
