@@ -1,12 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
 using System.Globalization;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace CalcDemo
@@ -14,6 +7,8 @@ namespace CalcDemo
     public partial class Calc : Form
     {
         private readonly HiddenForm _settingsForm = new HiddenForm();
+        private readonly Dog _tuantuan = new Dog();
+        
         public Calc()
         {
             InitializeComponent();
@@ -22,11 +17,7 @@ namespace CalcDemo
         public string T1;
         public string T2;
        
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-           T1 = textBox1.Text;
-          
-        }
+        private void textBox1_TextChanged(object sender, EventArgs e) => T1 = textBox1.Text;
 
         private void Form1_Load(object sender, EventArgs e)
         {
@@ -48,18 +39,18 @@ namespace CalcDemo
          //   textBox2.Text = T1;
          //   var selectedIndex = comboBox1.SelectedIndex;
          //   var selectedItem = comboBox1.SelectedItem;
-       
+            if (_tuantuan != null) textBox4.Text = (_tuantuan.total_eyes(2, 3)).ToString(CultureInfo.InvariantCulture);
             var  sToN1 = Convert.ToDouble(T1);
             var  sToN2 = Convert.ToDouble(T2);
 
 
-            if (radioButton1.Checked == true)
+            if (radioButton1.Checked)
                 textBox3.Text = (sToN1 + sToN2).ToString(CultureInfo.InvariantCulture);
-            else if (radioButton2.Checked == true)
+            else if (radioButton2.Checked)
                 textBox3.Text = (sToN1 - sToN2).ToString(CultureInfo.InvariantCulture);
-            else if (radioButton3.Checked == true)
+            else if (radioButton3.Checked)
                 textBox3.Text = (sToN1 * sToN2).ToString(CultureInfo.InvariantCulture);
-            else if (radioButton4.Checked == true)
+            else if (radioButton4.Checked)
             {
 
                 try
@@ -79,10 +70,18 @@ namespace CalcDemo
         {
             
         // Show the settings form
-            if (_settingsForm.Visible == true)
+            if (_settingsForm.Visible)
                 _settingsForm.Hide();
             else 
                 _settingsForm.Show();
+            
+        }
+
+
+
+        private void NumValueChanged(object sender, EventArgs e)
+        {
+            textBox4.Text = (numericUpDown1.Value * 5).ToString(CultureInfo.InvariantCulture);
         }
     }
 }
