@@ -1,11 +1,10 @@
 ﻿namespace CalcDemo
 {
-    public partial class Dog
+    public static partial class Dog
     {
-        public int DogLegs;
-        public int DogEyes;
+        
 
-        public int total_eyes(int inputA, int inputB)
+        public static int total_eyes(int inputA, int inputB)
         {
             return (inputA + inputB);
         }

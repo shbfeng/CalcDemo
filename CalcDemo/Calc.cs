@@ -7,18 +7,23 @@ namespace CalcDemo
   
     public partial class Calc : Form
     {
-        private readonly HiddenForm _settingsForm = new HiddenForm();
-        private readonly Dog _tuantuan = new Dog();
-        
+        readonly HiddenForm _settingsForm = new HiddenForm();
+     //   readonly Dog _tuantuan = new Dog();
+
         public Calc()
         {
+            
             InitializeComponent();
-        }
+            
+    }
 
         public string T1;
         public string T2;
-       
-        private void textBox1_TextChanged(object sender, EventArgs e) => T1 = textBox1.Text;
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+            T1 = textBox1.Text;
+        }
 
         private void Form1_Load(object sender, EventArgs e)
         {
@@ -37,10 +42,11 @@ namespace CalcDemo
 
         private void button1_Click(object sender, EventArgs e)
         {
-         //   textBox2.Text = T1;
-         //   var selectedIndex = comboBox1.SelectedIndex;
-         //   var selectedItem = comboBox1.SelectedItem;
-            if (_tuantuan != null) textBox4.Text = (_tuantuan.total_eyes(2, 3)).ToString(CultureInfo.InvariantCulture);
+            //   textBox2.Text = T1;
+            //   var selectedIndex = comboBox1.SelectedIndex;
+            //   var selectedItem = comboBox1.SelectedItem;
+            //  if (_tuantuan != null) textBox4.Text = (_tuantuan.total_eyes(2, 3)).ToString(CultureInfo.InvariantCulture);
+            textBox4.Text = (Dog.total_eyes(2, 3)).ToString();
             var  sToN1 = Convert.ToDouble(T1);
             var  sToN2 = Convert.ToDouble(T2);
 
