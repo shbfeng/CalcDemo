@@ -1,6 +1,6 @@
 ﻿namespace CalcDemo
 {
-    public static partial class Dog
+    public  partial class Dog
     {
         
 
