@@ -4,7 +4,7 @@
     {
         
 
-        public static int total_eyes(int inputA, int inputB)
+        public static double total_eyes(double inputA, double inputB)
         {
             return (inputA + inputB);
         }

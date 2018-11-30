@@ -46,7 +46,9 @@ namespace CalcDemo
             //   var selectedIndex = comboBox1.SelectedIndex;
             //   var selectedItem = comboBox1.SelectedItem;
             //  if (_tuantuan != null) textBox4.Text = (_tuantuan.total_eyes(2, 3)).ToString(CultureInfo.InvariantCulture);
-            textBox4.Text = (Dog.total_eyes(2, 3)).ToString();
+            string a = "1.5";
+            string b = "2.3";
+            textBox4.Text = (Dog.total_eyes(Double.Parse(a), Double.Parse(b))).ToString();
             var  sToN1 = Convert.ToDouble(T1);
             var  sToN2 = Convert.ToDouble(T2);
 
